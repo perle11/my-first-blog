@@ -68,3 +68,27 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
+.img-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.img-column img {
+    margin: 20px 0;
+}
+
+.content .separator {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.content h2.centered {
+    text-align: center;
+    margin-top: 0;
+}

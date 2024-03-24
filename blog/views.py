@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from django.shortcuts import render, get_object_or_404
@@ -39,3 +38,9 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def top_5(request):
+    return render(request, 'blog/top_5.html')
+
+def stats(request):
+    return render(request, 'blog/stats.html')

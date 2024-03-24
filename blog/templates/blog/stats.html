@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+	<div class="row">
+                <div class="col img-column">
+                    <h2 class="text-center my-4">Quelques statistiques sur la collection</h2>
+                    <img src="{% static 'images/histo.png' %}" alt="My image" class="img-fluid">
+                    <img src="{% static 'images/stats.png' %}" alt="My image" class="img-fluid">
+                    <img src="{% static 'images/prix.png' %}" alt="My image" class="img-fluid">
+                </div>
+	</div>
+{% endblock %}
